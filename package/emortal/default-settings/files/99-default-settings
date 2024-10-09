@@ -38,6 +38,7 @@ uci -q batch <<-EOF >/dev/null
 	commit dhcp
 
 	del network.wan6
+	del network.lan6
 	del network.lan.ip6assign
 	commit network
 EOF
